@@ -1,11 +1,16 @@
 
-const name = document.getElementById('userName')
-const email = document.getElementById('userEmail')
-const form = document.getElementById('form')
+// const name = document.getElementById('userName')
+// const email = document.getElementById('userEmail')
+// const form = document.getElementById('form')
 
+const open = document.getElementById('open');
 const modal = document.getElementById('modal');
-const openBtn = document.querySelector('openBtn')
-const closeBtn = document.querySelector('closeBtn')
+const close = document.getElementById('close');
+
+
+open.addEventListener('click', () => {
+    modal.classList.add('show');
+})
 
 
 

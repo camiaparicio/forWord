@@ -47,23 +47,23 @@ p {
     padding: 20px;
 }
 
-/* modal */
+/* MODAL */
 
-.modal{
+.modalContainer{
     position: fixed;
-    /* top: 0;
-    left: 0; */
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 10px;
-    padding: 10px;
-    z-index: 10;
-    background: white;
-    width: 400px;
-    max-width: 80%;
-    text-align: center;
-    /* display: none; */
+    top: 0;
+    left: 0; 
+    width: 100vw;
+    height: 400vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
 }
 
+.modal{
+    width: 600px;
+    background: white;
+}
 
 .modal button {
     cursor: pointer;
@@ -71,15 +71,4 @@ p {
     outline: none;
     background: silver;
     border-radius: 50%;
-}
-
- #overlay{
-    position: fixed;
-    /* opacity: 0; */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .8);
-    pointer-events: none;
 }
