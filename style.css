@@ -13,10 +13,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* styling */
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 125%; /* 20px default */
     color: black;
-    letter-spacing: 0.04rem;
 }
 
 .wrapper {
@@ -36,7 +35,7 @@ h1 span {
 
 p {
     color: #c2c4c9;
-    width: 80%;
+    width: 85%;
     line-height: 40px;
     font-size: 1.3rem;
 }
@@ -83,7 +82,7 @@ form button {
     color: white;
     cursor: pointer;
     border: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-top: 30px;
 }
 
@@ -148,4 +147,49 @@ form button {
 
 .overlay.active {
     display: block;
+}
+
+/* media queries */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    .flexContainer{
+        flex-direction: column;
+    }
+
+    .leftSection{
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .rightSection{
+        width: 80%;
+        margin: 0 0 0 0;
+    }
+
+    .modal{
+        width: 50%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .modalText > h1 {
+        font-size: 1.5rem;
+    }
+
+    .modalText > p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
 }
