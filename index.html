@@ -35,7 +35,7 @@
                     <label for="userEmail">Email</label>
                     <input required type="email" id="userEmail" name="userEmail">
         
-                    <button id="open" type="submit">Start My Free Trial</button>
+                    <button class="openBtn" type="submit">Start My Free Trial</button>
                   
                   </form>
         
@@ -46,13 +46,12 @@
     </div>
     
     <!-- modal -->
-    <div class="modalContainer" id="modalContainer">
-        <div class="modal" id="modal">
-            <h1>Welcome ${NAME}</h1>
-            <button id="close">&times;</button>
-            <p>Thanks for filling out the form. A confirmation email has been sent to your ${EMAIL} account</p>
-        </div>
+    <div class="modal">
+        <h1>Welcome <span class="modal-user-name"></span></h1>
+        <button class="closeBtn">&times;</button>
+        <p>Thanks for filling out the form. A confirmation email has been sent to your <span class="modal-user-email"></span> account</p>
     </div>
+    <div class="overlay"></div>
 
 </body>
 </html>

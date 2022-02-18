@@ -51,27 +51,25 @@ p {
     padding: 20px;
 }
 
-/* MODAL */
+/* modal */
 
-.modalContainer{
+.modal {
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0; 
-    width: 100vw;
-    height: 400vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.modal{
-    width: 600px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 10;
     background: white;
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
 }
 
-.modalContainer.show{
-    pointer-events: auto;
-    opacity: 1;
+.modal.active {
+    display: block;
 }
 
 .modal button {
@@ -80,5 +78,19 @@ p {
     outline: none;
     background: silver;
     border-radius: 50%;
-    padding: 50px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+}
+
+.overlay.active {
+    display: block;
 }
