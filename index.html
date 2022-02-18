@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    
+
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     
@@ -19,6 +25,7 @@
         <div class="flexContainer">
             
             <header class="leftSection">
+                <h3>ForWord</h3>
                 <h1>Get More From Your <span>Content</span>.</h1>
                 <p>ForWord helps you optimize your brands' publications to reach a larger audience, integrating social content with your website.</p>
             </header>
@@ -30,10 +37,10 @@
                 <form action="#" method="GET" class="myForm" name="myForm" id="form">
         
                     <label for="userName">Name</label>
-                    <input required type="text" id="userName" name="userName">
+                    <input required type="text" id="userName" name="userName" placeholder="Enter your name">
         
                     <label for="userEmail">Email</label>
-                    <input required type="email" id="userEmail" name="userEmail">
+                    <input required type="email" id="userEmail" name="userEmail" placeholder="Enter your email">
         
                     <button class="openBtn" type="submit">Start My Free Trial</button>
                   
@@ -47,9 +54,12 @@
     
     <!-- modal -->
     <div class="modal">
-        <h1>Welcome <span class="modal-user-name"></span></h1>
-        <button class="closeBtn">&times;</button>
-        <p>Thanks for filling out the form. A confirmation email has been sent to your <span class="modal-user-email"></span> account</p>
+        <div class="modalText">
+            <button class="closeBtn">&times;</button>
+            <img src="./img.png" alt="celebration image">
+            <h1>Welcome <span class="modal-user-name"></span>!</h1>
+            <p>Thanks for filling out the form. A confirmation email has been sent to <span class="modal-user-email"></span>.</p>
+        </div>
     </div>
     <div class="overlay"></div>
 
